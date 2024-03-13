@@ -13,10 +13,6 @@ const [url, setUrl] = useState("");
     e.preventDefault();
     let formData = new FormData();
     formData.append("file", file.data);
-  //   let blob = file.data.slice(0, file.size, "image/jpeg");
-  // let newFile = new File([blob], `hello.jpeg`, { type: "image/jpeg" });
-  // Build the form data - You can add other input values to this i.e descriptions, make sure img is appended last
-  // formData.append("file", formData);
     fetch("http://localhost:3000/upload", {
     method: "POST",
     body: formData,
@@ -61,38 +57,15 @@ const [url, setUrl] = useState("");
   }
   return (
     <div className="container">
-      <div className="wrapper">
       {/* <!-- Widget JavaScript bundle --> */}
-
-
-{/* <!-- Search widget element is not visible by default --> */}
-<gen-search-widget
-  configId="bbea664c-cc7e-4da3-b912-afa2a71e88d2"
-  triggerId="searchWidgetTrigger">
-</gen-search-widget>
-
-{/* <!-- Element that opens the widget on click. It does not have to be an input --> */}
-<input placeholder="Search here" id="searchWidgetTrigger" />
-        {/* <div className="box">
-          <div className="input-box">
-            <h2 className="upload-area-title">Select Role</h2>
-            <div className="custom-select" >
-              <select id="slectDropdown" onChange={(event) =>setSelectedOption(event.target.value)}>
-                <option value="">-Select-</option>
-                <option value="Finance">Finance</option>
-                <option value="FED">FED</option>
-                <option value="BED">BED</option>
-                <option value="Others">Others</option>
-              </select>
-            </div>
-          </div>
-            <div className="filewrappercontainer">
-              <h3 className="uploaded">Seleted Option</h3>
-              <div id="selectedOption" className="filewrapper">
-                {selectedOption}
-            </div>
-        </div>
-      </div> */}
+      {/* <!-- Search widget element is not visible by default --> */}
+      <gen-search-widget
+        configId="bbea664c-cc7e-4da3-b912-afa2a71e88d2"
+        triggerId="searchWidgetTrigger">
+      </gen-search-widget>
+      {/* <!-- Element that opens the widget on click. It does not have to be an input --> */}
+      <input placeholder="Search here" id="searchWidgetTrigger" className="inputSearch" />
+      <div className="wrapper">
       <div className="box">
         <div className="input-box">
           <h2 className="upload-area-title">Upload File</h2>

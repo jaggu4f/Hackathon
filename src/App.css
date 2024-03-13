@@ -171,3 +171,11 @@ button{
     left: 1px;
     margin-top: 15px
 }
+.inputSearch{
+	width: 90%;
+    position: absolute;
+    height: 40px;
+    padding: 10px;
+	border-radius: 10px;
+	border-color: #fff;
+}
