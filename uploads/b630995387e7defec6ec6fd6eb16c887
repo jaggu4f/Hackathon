@@ -129,11 +129,10 @@
 }
 .customStyle{
 	background: #fff;
-  word-wrap: break-word;
 }
 .custom-select{
 	width: 100%;
-    height: 110px;
+    height: 104px;
 }
 .custom-select select{
 	width: 100%;
@@ -163,11 +162,4 @@ button{
 	height: 25px;
 	cursor: pointer;
 	color: #fff;
-}
-.submitBtn{
-	width: 100%;
-    position: relative;
-    top: 0;
-    left: 1px;
-    margin-top: 15px
 }
