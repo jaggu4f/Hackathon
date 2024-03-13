@@ -62,6 +62,17 @@ const [url, setUrl] = useState("");
   return (
     <div className="container">
       <div className="wrapper">
+      {/* <!-- Widget JavaScript bundle --> */}
+
+
+{/* <!-- Search widget element is not visible by default --> */}
+<gen-search-widget
+  configId="bbea664c-cc7e-4da3-b912-afa2a71e88d2"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+
+{/* <!-- Element that opens the widget on click. It does not have to be an input --> */}
+<input placeholder="Search here" id="searchWidgetTrigger" />
         {/* <div className="box">
           <div className="input-box">
             <h2 className="upload-area-title">Select Role</h2>
@@ -89,8 +100,8 @@ const [url, setUrl] = useState("");
               <input type="file" name="file" id="upload" accept=".doc,.docx,.pdf,.txt" onChange={handleFileChange} multiple hidden/>
               <label htmlFor="upload" className="uploadlabel">
                 <span><i className="fa fa-cloud-upload"></i></span>
-                <p>Click to Upload</p>
-                <button className="submitBtn" type="submit">Submit</button>
+                <p>Click here</p>
+                <button className="submitBtn" type="submit">Upload</button>
               </label>
             </form>
           </div>
